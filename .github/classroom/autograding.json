@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Map",
+      "setup": "npm install",
+      "run": "npm run test:ci 01_map.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "ForEach",
+      "setup": "npm install",
+      "run": "npm run test:ci 02_forEach.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "Filter",
+      "setup": "npm install",
+      "run": "npm run test:ci 03_filter.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    }
+  ]
+}
