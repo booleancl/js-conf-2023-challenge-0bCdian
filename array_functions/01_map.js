@@ -25,10 +25,16 @@
   => Array(3) [ "A", "B", "C" ]
 */
 
-function map(array, callback){
+function map(array, callback) {
   // Tu código acá:
-
+  let newArr = []
+  const ARRLENGTH = array.length
+  for (let i = 0; i < ARRLENGTH; i++) {
+    newArr.push(callback(array[i], i, array))
+  }
+  return newArr
 }
+
 
 module.exports = {
   map: map
