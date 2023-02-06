@@ -17,13 +17,16 @@
   => Array [10,20]  
 */
 
-function filter(array, callback){
-  var arrayLength = array.length;
-	var newArray = [];
-
-
+function filter(array, callback) {
+  const arrayLength = array.length;
+  const newArray = [];
+  for (i = 0; i < arrayLength; i++) {
+    const callbackReturnValue = callback(array[i], i, array)
+    callbackReturnValue ? newArray.push(array[i]) : null
+  }
   return newArray;
 }
+
 
 module.exports = {
   filter: filter

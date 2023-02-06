@@ -25,11 +25,13 @@
   => undefined
 */
 
-function forEach(array, callback){
-  var arrayLength = array.length;	
-	for (var i = 0; i < arrayLength; i++) {
+function forEach(array, callback) {
+  let arrayLength = array.length;
+  for (let i = 0; i < arrayLength; i++) {
     // Tu código acá:
+    callback(array[i], i, array)
   }
+  return undefined
 }
 
 module.exports = {
